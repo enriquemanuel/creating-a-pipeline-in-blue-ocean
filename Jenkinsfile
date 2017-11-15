@@ -1,11 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'alpine'
-      args 'latest'
-    }
-    
-  }
+  agent any
   stages {
     stage('one step') {
       steps {
