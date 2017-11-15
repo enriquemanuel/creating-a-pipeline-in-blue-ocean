@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('one step') {
       steps {
-        build(job: 'enriqueme', wait: true)
+        build(job: 'test', wait: true)
         echo 'aaaaa'
       }
     }
