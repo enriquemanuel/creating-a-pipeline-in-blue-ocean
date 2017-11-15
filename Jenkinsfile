@@ -2,9 +2,9 @@ pipeline {
   agent any
   stages {
     stage('one step') {
+      agent any
       steps {
-        build(job: 'test', wait: true)
-        echo 'aaaaa'
+        build(job: 'job1', wait: true)
       }
     }
   }
